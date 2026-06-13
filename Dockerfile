@@ -25,9 +25,9 @@ WORKDIR /app
 # Install Python dependencies first (caching layer)
 # --no-cache-dir keeps the image small (no pip wheel cache left behind).
 # CPU-only torch is pulled via the --extra-index-url in requirements.txt.
-COPY backend/requirements.txt .
+COPY backend/requirement.txt .
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir -r requirement.txt && \
     rm -rf /root/.cache
 
 # Copy backend application code
