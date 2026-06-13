@@ -8,11 +8,11 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME     = "llm-rag-app"
+        IMAGE_NAME     = "LLM-RAG-Project_docker"
         IMAGE_TAG      = "${env.BUILD_NUMBER}"
         EC2_HOST       = credentials('EC2_HOST')          // e.g. ubuntu@1.2.3.4
         OPENAI_API_KEY = credentials('OPENAI_API_KEY')    // Jenkins secret
-        DOCKERHUB_USER = "excelr"                         // Your Docker Hub username
+        DOCKERHUB_USER = "jivansatpute8@gmail.com"                         // Your Docker Hub username
     }
 
     stages {
