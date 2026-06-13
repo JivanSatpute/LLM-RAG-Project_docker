@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python caching
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables and sensitive data
+.env
+.env.*
+!.env.example
+
+# Local application data & file uploads
+backend/uploads/
+uploads/
+
+# IDE / Editor specific configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Operating System files
+.DS_Store
+Thumbs.db
