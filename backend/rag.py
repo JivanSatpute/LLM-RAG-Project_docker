@@ -71,11 +71,11 @@ def search_query(question):
 
 # generate output
 def generate_answer(question,context):
-    api_key=os.getenv("OPEN_AI_KEY")
+    api_key=os.getenv("OPENAI_API_KEY")
    # openai_client = OpenAI(api_key="")
     if not api_key:
         raise RuntimeError (
-            "OPEN_AI_KEY environment is not set. " 
+            "OPENAI_API_KEY environment is not set. " 
             "set it in your .env file or system environment."
         )
     openai_client = OpenAI(api_key=api_key)
